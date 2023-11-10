@@ -1,0 +1,10 @@
+<aside class="bg-black flex flex-col h-screen">
+  <h1 class="text-white text-3xl font-bold ms-3 mt-3">Sidebar</h1>
+  <hr class="my-5 w-3/4 mx-auto">
+  <button
+  *ngFor="let busqueda of listabusqueda"
+  (click)="buscaGifs(busqueda)"
+  class="bg-white mx-auto px-10 py-2 rounded-md hover:bg-slate-400 transition-colors m-3 w-3/4">
+    {{busqueda | titlecase}}
+  </button>
+</aside>
